@@ -57,7 +57,7 @@ plt.scatter(np.array(date_x), y, label='data')
 plt.plot(x, polinom_trend(x), linestyle='dashed', color="orange", label='polinomial trend')
 plt.grid(color="gainsboro")
 plt.legend(loc='upper right', fontsize=10)
-plt.title("Полиномиальный \n$R^2=$" + str(polinom_r2) + "\n{0}x^6 + {1}x^5 + {2}x^4 + \n{3}x^3 + {4}x^2 + {5}x + \n${6}"
+plt.title("Полиномиальный \n$R^2=$" + str(polinom_r2) + "\n{0}x^6 + {1}x^5 + {2}x^4 + \n{3}x^3 + {4}x^2 + {5}x + \n{6}"
           .format(*set_polinom_by_data), fontsize=10)
 plt.xticks(fontsize=8)
 plt.yticks(fontsize=8)
@@ -68,7 +68,7 @@ plt.scatter(np.array(date_x), y, label='data')
 plt.plot(x, log_trend, linestyle='dashed', color="orange", label='log trend')
 plt.grid(color="gainsboro")
 plt.legend(loc='upper right', fontsize=10)
-plt.title("Логарифмический \n$R^2=$" + str(log_r2) + "\n${0}ln(x) + {1}$".format(*set_log_by_data), fontsize=10)
+plt.title("Логарифмический \n$R^2=$" + str(log_r2) + "\n{0}ln(x) + {1}".format(*set_log_by_data), fontsize=10)
 plt.xticks(fontsize=8)
 plt.yticks(fontsize=8)
 
